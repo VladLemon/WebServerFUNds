@@ -1,4 +1,38 @@
 <!DOCTYPE html>
+
+<script>
+function AlertBoxFn() {
+  alert("Allert! Please click on ok button and forget about Allert Button");
+}
+
+function HideFn() {
+    var x = document.getElementById("hide");
+    if (x.style.display === "none") 
+        {
+        x.style.display = "block";
+        } 
+    else 
+        {
+        x.style.display = "none";
+        }
+}
+function truthFn(){
+    document.getElementById("img").src = "https://media.istockphoto.com/id/1358867896/vector/weekend-loading-bar-infographics-design-element-with-status-of-week-completion-hand-drawn.jpg?s=612x612&w=0&k=20&c=f5uD78cgXWbOGSO8pAJNO4KRlU4vq8xWcAKZBMmjBj4=";
+    }
+
+function ChangeFn(chg) {
+  chg.innerHTML = "Noooooo!!!! Why did you did that to mee";
+}
+function loadDocFn() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("here").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "ajax.txt");
+  xhttp.send();
+}
+</script>
+
 <html>
 
 <head>
@@ -14,7 +48,28 @@
     <a href="Test.html">Test Page</a> <br>
     <a href="#down">Funny links</a> 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    
+    <button onclick="AlertBoxFn()">Allert Button</button>
+
+    <p id="time">The current time is ...</p>
+    <button onclick="document.getElementById('time').innerHTML = Date()">Show time</button>
+    <p id="hide">This text is unhidable</p>
+    <button onclick="HideFn()">Hide the text</button>
+    <br><br><br>
+    <p>Under is shown my favorite thing</p>
+    <button onclick="truthFn()">Show the reality</button><br>
+    <img id="img" src="https://www.thefactsite.com/wp-content/uploads/2017/10/monday-facts.webp">
+    <br><br>
+    <button onclick="ChangeFn(this)">Click on the button to change it</button>
+    <br><br>
+
+    Ajax demo<br>
+    <button onclick="loadDocFn()">Click Me to see Ajax Magic</button><br>
+    <span id="here"></span>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h2 id="down">Some Funny Links</h2>
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Consult it!</a>
 

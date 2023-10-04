@@ -20,7 +20,8 @@
 
     <form>
       <label for="fname">First name:</label><br />
-      <input type="text" required id="fname" name="fname" /><br />
+      <input type="text" onblur="document.getElementById('imp').innerHTML = 'This Field is REQUIRED, answer it'" /><br />
+      <span id="imp"></span><br/>
       <label for="lname">Last name:</label><br />
       <input type="text" required id="lname" name="lname" /><br /><br />
 
