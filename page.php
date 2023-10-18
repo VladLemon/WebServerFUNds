@@ -26,7 +26,7 @@
     <h3>Data base: </h3>
     <form action="result.php" method="get">
         <label for="anime">Select anime to see details about:</label><br/>
-        <select id="anime" name="anime">
+        <select id="anime_top" name="anime_top">
             <?php
                 foreach($result as $row) 
                 {
