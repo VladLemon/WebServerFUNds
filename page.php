@@ -24,17 +24,8 @@
 
 <body>
     <h3>Data base: </h3>
-    This are the anime in the database table: </br>
-    <?php
-        foreach($result as $row) 
-        {
-            echo "Top: {$row['anime_top_number']} | Name: {$row['anime_name']} | Episodes: {$row['total_num_episodes']}<br>";
-        }
-        mysqli_close($conn);
-    ?>
-
-    <form action="sqlans.php" method="get">
-        <label for="anime">Select anime</label><br/>
+    <form action="result.php" method="get">
+        <label for="anime">Select anime to see details about:</label><br/>
         <select id="anime" name="anime">
             <?php
                 foreach($result as $row) 

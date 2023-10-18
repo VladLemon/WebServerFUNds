@@ -39,7 +39,6 @@
             <input type="date" id="dob" name="dob" required>
             <br>
         </form>
-
       <br /><br />
       <p>Which programming languages do you know?</p>
       <input type="checkbox" id="language1" name="language1" value="C" />
