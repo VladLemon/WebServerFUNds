@@ -4,7 +4,7 @@
         <title>SQL test- Results</title>
         <?php
             // Retrieve submitted information
-            $topnum = htmlspecialchars($_GET["anime_top"]); 
+            $topnum = (int)($_GET["anime_top"]); 
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -15,7 +15,7 @@
             if (!$conn) {
               die("Connection failed: {mysqli_connect_error()}");
             }
-            $sql = "select * from courses where anime_top_number='{$topnum}';";
+            $sql = "select * from courses where anime_top_number={$topnum};";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
