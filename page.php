@@ -24,11 +24,11 @@
 
 <body>
     <h3>Data base: </h3>
-    This are the anime in the database table
+    This are the anime in the database table: </br>
     <?php
         foreach($result as $row) 
         {
-            echo "Top: {$row['anime_top_number']} | Name: {$row['anime_name']} | Episodes: {$row['total_num_episodes']}\n";
+            echo "Top: {$row['anime_top_number']} | Name: {$row['anime_name']} | Episodes: {$row['total_num_episodes']}<br>";
         }
         mysqli_close($conn);
     ?>
