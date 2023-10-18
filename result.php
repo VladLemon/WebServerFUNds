@@ -20,12 +20,12 @@
         ?>
     </head>
     <body>
-        Your selected anime is: <?= $topnum ?><br/>
+        Your selected anime top number is: <?= $topnum ?><br/>
         <p><?= mysqli_error($conn) ?></p>
         <?php
             foreach($result as $row)
             {
-                echo "{$row['anime_name']} has {$row['total_num_episodes']} episodes and is top {$row['anime_top_number']}.";
+                echo "{$row['anime_name']} has {$row['total_num_episodes']} episodes.";
             }
             mysqli_close($conn);
         ?>
