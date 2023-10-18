@@ -15,7 +15,7 @@
             if (!$conn) {
               die("Connection failed: {mysqli_connect_error()}");
             }
-            $sql = "select * from courses where anime_top_number={$topnum};";
+            $sql = "select * from top where anime_top_number={$topnum};";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
