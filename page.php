@@ -38,10 +38,12 @@
         <br/>
         <input type="submit" value="submit"/>  
     </form>
+
     </br></br>
+
     <form action="chtable.php" method="get">
-        <label for="anime">Select anime to change in data base:</label><br/>
-        <select id="anime_top" name="anime_top">
+        <label for="anime1">Select anime to change in data base:</label><br/>
+        <select id="anime_top1" name="anime_top1">
             <?php
                 foreach($result as $row) 
                 {
@@ -49,8 +51,8 @@
                 }
                 mysqli_close($conn);
             ?>
-        </select>
-        <label for="anime">Enter the number of current episodes:</label><br/>
+        </select></br>
+        <label for="anime2">Enter the number of current episodes:</label><br/>
         <input type="number" required id="epnum" name="epnum" /><br /><br />
         <br/>
         <input type="submit" value="submit"/>  

@@ -4,7 +4,7 @@
         <title>SQL test- Change Results</title>
         <?php
             // Retrieve submitted information
-            $topnum = (int)($_GET["anime_top"]); 
+            $topnum = (int)($_GET["anime_top1"]); 
             $change = (int)($_GET["epnum"])
             $server = "localhost";
             $username = "php";
