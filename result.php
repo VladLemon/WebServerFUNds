@@ -25,7 +25,7 @@
         <?php
             foreach($result as $row)
             {
-                echo "{Its name is: $row['anime_name']} and it has {$row['total_num_episodes']} episodes.";
+                echo "Its name is: {$row['anime_name']} and it has {$row['total_num_episodes']} episodes.";
             }
             mysqli_close($conn);
         ?>
