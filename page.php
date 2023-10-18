@@ -38,6 +38,23 @@
         <br/>
         <input type="submit" value="submit"/>  
     </form>
+    </br></br>
+    <form action="chtable.php" method="get">
+        <label for="anime">Select anime to change in data base:</label><br/>
+        <select id="anime_top" name="anime_top">
+            <?php
+                foreach($result as $row) 
+                {
+                    echo "<option value='{$row['anime_top_number']}'> Top: {$row['anime_top_number']} | Name: {$row['anime_name']}</option>\n";
+                }
+                mysqli_close($conn);
+            ?>
+        </select>
+        <label for="anime">Enter the number of current episodes:</label><br/>
+        <input type="number" required id="epnum" name="epnum" /><br /><br />
+        <br/>
+        <input type="submit" value="submit"/>  
+    </form>
 
     <h3>This is your user agent:</h3>
     <p><?= $_SERVER['HTTP_USER_AGENT']?></p> 
