@@ -4,7 +4,7 @@
         <title>SQL test- Results</title>
         <?php
             // Retrieve submitted information
-            $topnum = htmlspecialchars($_GET["anime"]); 
+            $topnum = htmlspecialchars($_GET["anime_top_number"]); 
             $server = "localhost";
             $username = "php";
             $password = "password";
