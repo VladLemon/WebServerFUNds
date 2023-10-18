@@ -51,10 +51,9 @@
                 }
                 mysqli_close($conn);
             ?>
-        </select></br>
+        </select></br></br>
         <label for="anime2">Enter the number of current episodes:</label><br/>
         <input type="number" required id="epnum" name="epnum" /><br /><br />
-        <br/>
         <input type="submit" value="submit"/>  
     </form>
 
