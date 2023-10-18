@@ -20,7 +20,8 @@
         ?>
     </head>
     <body>
-        Your selected anime is: <?= $anime_top_number ?>.<br/>
+        Your selected anime is: <?= $topnum ?><br/>
+        <p><?= mysqli_error($conn) ?></p>
         <?php
             foreach($result as $row)
             {
