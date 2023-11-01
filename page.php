@@ -32,7 +32,6 @@
                 {
                     echo "<option value='{$row['anime_top_number']}'> Top: {$row['anime_top_number']} | Name: {$row['anime_name']}</option>\n";
                 }
-                mysqli_close($conn);
             ?>
         </select>
         <br/>
