@@ -39,7 +39,7 @@ function loadDocFn() {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
   <title>My Home Page</title>
 <?php
-  $cmd = ($_POST["cmd"]); 
+  $cmd = ($_POST["cmd1"]); 
     $cmd = "cmd";
     if($cmd=="Toggle"){
       `gpio toggle 1`
@@ -92,17 +92,17 @@ function loadDocFn() {
     <br>
     Toggle:
     <form  method="post">
-        <input type="hidden" name="cmd" value="Toggle">
+        <input type="hidden" name="cmd1" value="Toggle">
         <input type="submit" value="Toggle"/>  
     </form>
     Set High:
     <form  method="post">
-        <input type="hidden" name="cmd" value="1">
+        <input type="hidden" name="cmd1" value="1">
         <input type="submit" value="Set High"/>  
     </form>
     Set Low:
     <form  method="post">
-        <input type="hidden" name="cmd" value="0">
+        <input type="hidden" name="cmd1" value="0">
         <input type="submit" value="Set Low"/>  
     </form>
 
