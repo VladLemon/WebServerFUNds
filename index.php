@@ -40,6 +40,7 @@ function loadDocFn() {
   <title>My Home Page</title>
 <?php
   $cmd = $_POST["cmd1"]; 
+  $rlddata = $POST["getdata"];
     if($cmd=="Toggle"){
       `gpio toggle 1`;
     }
@@ -50,7 +51,14 @@ function loadDocFn() {
       `gpio write 1 0`;
     }
     $value = `gpio read 1`;
-
+    if($rld=="datain"){
+      $raw = `./bme280`; 
+      $deserialized = json_decode($raw, true);  
+      var_dump($deserialized); 
+      $temp = $deserialized["temperature"]; 
+      $prsr = $deserialized["pressure"]; 
+      $altt = $deserialized["altitude"]; 
+    }
 ?>
 </head>
 
@@ -104,6 +112,15 @@ function loadDocFn() {
         <input type="hidden" name="cmd1" value="0">
         <input type="submit" value="Set Low"/>  
     </form>
+    BME280 Monitoring system:
+    <form  method="post">
+        <input type="hidden" name="getdata" value="datain">
+        <input type="submit" value="Reload data"/>  
+    </form>
+    Current States:
+    Temperature = <?=$temp?>
+    Pressure = <?=$prsr?>
+    Altitude = <?=$altt?>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h2 id="down">Some Funny Links</h2>
