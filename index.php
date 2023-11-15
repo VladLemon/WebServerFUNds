@@ -115,9 +115,9 @@ function loadDocFn() {
         <input type="submit" value="Reload data"/>  
     </form>
     Current States:
-    <br>Temperature = <?php echo $deserialized["temperature"]; ?>
-    <br>Pressure = <?php echo $deserialized["pressure"]; ?>
-    <br>Altitude = <?php echo $deserialized["altitude"]; ?>
+    <br>Temperature = <?php echo $deserialized["temperature"] ?>
+    <br>Pressure = <?php echo $deserialized["pressure"] ?>
+    <br>Altitude = <?php echo $deserialized["altitude"] ?>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h2 id="down">Some Funny Links</h2>
