@@ -7,12 +7,10 @@ function AlertBoxFn() {
 
 function HideFn() {
     var x = document.getElementById("hide");
-    if (x.style.display === "none") 
-        {
+    if (x.style.display === "none") {
         x.style.display = "block";
         } 
-    else 
-        {
+    else {
         x.style.display = "none";
         }
 }
