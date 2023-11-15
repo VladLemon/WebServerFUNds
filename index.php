@@ -55,9 +55,6 @@ function loadDocFn() {
       $raw = `./bme280`; 
       $deserialized = json_decode($raw, true);  
       var_dump($deserialized); 
-      $temp = $deserialized["temperature"]; 
-      $prsr = $deserialized["pressure"]; 
-      $altt = $deserialized["altitude"]; 
     }
 ?>
 </head>
@@ -95,7 +92,7 @@ function loadDocFn() {
     
     
     <h3>GPIO Test(requires breadboard)</h3>
-    Value = <?php echo $value ?>
+    Value = <?php echo $value?>
     <br>
     Toggle:
     <form  method="post">
@@ -118,9 +115,9 @@ function loadDocFn() {
         <input type="submit" value="Reload data"/>  
     </form>
     Current States:
-    Temperature = <?=$temp?>
-    Pressure = <?=$prsr?>
-    Altitude = <?=$altt?>
+    <br>Temperature = <?php echo $deserialized["temperature"]; ?>
+    <br>Pressure = <?php echo $deserialized["pressure"]; ?>
+    <br>Altitude = <?php echo $deserialized["altitude"]; ?>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h2 id="down">Some Funny Links</h2>
