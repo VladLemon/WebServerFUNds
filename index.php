@@ -40,15 +40,14 @@ function loadDocFn() {
   <title>My Home Page</title>
 <?php
   $cmd = $_POST["cmd1"]; 
-    $cmd = "cmd";
     if($cmd=="Toggle"){
-      `gpio toggle 1`
+      `gpio toggle 1`;
     }
     else if ($cmd == "1"){
-      `gpio write 1 1`
+      `gpio write 1 1`;
     }
     else if ($cmd == "0"){
-      `gpio write 1 0`
+      `gpio write 1 0`;
     }
     $value = `gpio read 1`;
 
