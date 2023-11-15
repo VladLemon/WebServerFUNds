@@ -87,7 +87,7 @@ function loadDocFn() {
     
     
     <h3>GPIO Test(requires breadboard)</h3>
-    Value = <?php $value ?>
+    Value = <?php echo $value ?>
     <br>
     Toggle:
     <form  method="post">
