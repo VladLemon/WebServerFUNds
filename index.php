@@ -113,6 +113,7 @@ function RldData() {
     BME280 Monitoring system:
     <button onclick="RldData()">Reload Data</button><br>
     Current States:
+    <br>
     <span id="Update"></span>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
