@@ -39,6 +39,7 @@ function loadDocFn() {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
   <title>My Home Page</title>
 <?php
+  $cmd = ($_POST["cmd"]); 
     $cmd = "cmd";
     if($cmd=="Toggle"){
       `gpio toggle 1`
@@ -50,6 +51,7 @@ function loadDocFn() {
       `gpio write 1 0`
     }
     $value = `gpio read 1`;
+
 ?>
 </head>
 
