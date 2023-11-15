@@ -31,6 +31,15 @@ function loadDocFn() {
   xhttp.open("GET", "ajax.txt");
   xhttp.send();
 }
+
+function RldData() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("Update").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "UpdData.php");
+  xhttp.send();
+}
 </script>
 
 <html>
@@ -40,7 +49,6 @@ function loadDocFn() {
   <title>My Home Page</title>
 <?php
   $cmd = $_POST["cmd1"]; 
-  $rld = $POST["getdata"];
     if($cmd=="Toggle"){
       `gpio toggle 1`;
     }
@@ -51,11 +59,6 @@ function loadDocFn() {
       `gpio write 1 0`;
     }
     $value = `gpio read 1`;
-    if($rld=="datain"){
-      $raw = `./bme280`; 
-      $deserialized = json_decode($raw, true);  
-      var_dump($deserialized); 
-    }
 ?>
 </head>
 
@@ -110,14 +113,9 @@ function loadDocFn() {
         <input type="submit" value="Set Low"/>  
     </form>
     BME280 Monitoring system:
-    <form  method="post">
-        <input type="hidden" name="getdata" value="datain">
-        <input type="submit" value="Reload data"/>  
-    </form>
+    <button onclick="RldData()">Reload Data</button><br>
     Current States:
-    <br>Temperature = <?php echo $deserialized["temperature"] ?>
-    <br>Pressure = <?php echo $deserialized["pressure"] ?>
-    <br>Altitude = <?php echo $deserialized["altitude"] ?>
+    <span id="Update"></span>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h2 id="down">Some Funny Links</h2>
