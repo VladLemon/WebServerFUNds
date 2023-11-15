@@ -40,7 +40,7 @@ function loadDocFn() {
   <title>My Home Page</title>
 <?php
   $cmd = $_POST["cmd1"]; 
-  $rlddata = $POST["getdata"];
+  $rld = $POST["getdata"];
     if($cmd=="Toggle"){
       `gpio toggle 1`;
     }
