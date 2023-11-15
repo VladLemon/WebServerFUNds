@@ -38,6 +38,19 @@ function loadDocFn() {
 <head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
   <title>My Home Page</title>
+<?php
+    $cmd = "cmd";
+    if($cmd=="Toggle"){
+      `gpio toggle 1`
+    }
+    else if ($cmd == "1"){
+      `gpio write 1 1`
+    }
+    else if ($cmd == "0"){
+      `gpio write 1 0`
+    }
+    $value = `gpio read 1`;
+?>
 </head>
 
 <body>
@@ -71,8 +84,25 @@ function loadDocFn() {
 
     SQL+PHP
     
-
-
+    
+    <h3>GPIO Test(requires breadboard)</h3>
+    Value = <?php $value ?>
+    <br>
+    Toggle:
+    <form  method="post">
+        <input type="hidden" name="cmd" value="Toggle">
+        <input type="submit" value="Toggle"/>  
+    </form>
+    Set High:
+    <form  method="post">
+        <input type="hidden" name="cmd" value="1">
+        <input type="submit" value="Set High"/>  
+    </form>
+    Set Low:
+    <form  method="post">
+        <input type="hidden" name="cmd" value="0">
+        <input type="submit" value="Set Low"/>  
+    </form>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h2 id="down">Some Funny Links</h2>
