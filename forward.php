@@ -22,4 +22,10 @@
             //header('Location: {$search_term}');
         ?>
     </head>
-    
+    <body>
+        <p><?= mysqli_error($conn) ?></p>
+        <?php
+            $sql = "INSERT INTO searches (ip_addr, research) VALUES ({$ip_addr_val}, {$search_term})";
+            mysqli_close($conn);
+        ?>
+    </body>
