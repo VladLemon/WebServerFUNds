@@ -19,5 +19,5 @@
             $sql = "INSERT INTO searches ip_addr, research) VALUES ({$ip_addr_val}, {$search_term})";
             $result = mysqli_query($conn, $sql);
         ?>
-        header('Location: $search_term');
     </head>
+    header('Location: https://acme.co');
