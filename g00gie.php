@@ -21,22 +21,10 @@
 <body>
     <?= $_SERVER['REMOTE_ADDR'] ?>
 
-    <label for="student_id">Student ID:</label>
-      <input
-        type="text"
-        id="input"
-        name="input"
-        title="Search google or type URL"
-      />
+    <form action="users.php" method="POST">
+    <input id="search" name="search" type="text" placeholder="Search google or type URL">
+    <input id="submit" type="submit" value="Search">
 
-    <form action="" method="get">
-        <label for="pt1"></label><br/>
-        <input type="number" required id="epnum" name="epnum" /><br /><br />
-    </form>
-
-    <form action="users.php" method="GET">
-<input id="search" name="search" type="text" placeholder="Type here">
-<input id="submit" type="submit" value="Search">
 </form>
 
 </body>
