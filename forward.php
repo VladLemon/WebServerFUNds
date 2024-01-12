@@ -23,7 +23,7 @@
     <body>
         <p><?= mysqli_error($conn) ?></p>
         <?php
-            $sql = "INSERT INTO searches (ip_addr, research) VALUES ({$ip_addr_val}, {$search_term})";
+            $sql = "INSERT INTO searches (ip_addr, research) VALUES ('{$ip_addr_val}', '{$search_term}')";
             $result = mysqli_query($conn, $sql);
             mysqli_close($conn);
         ?>
