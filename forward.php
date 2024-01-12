@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>G00gie.ca</title>
         <?php
+            // Retrieve submitted information
+            $ip_addr_val = ($_SERVER['REMOTE_ADDR']); 
+            $search_term = ($_GET["search"]);
+
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -13,17 +16,7 @@
             if (!$conn) {
               die("Connection failed: {mysqli_connect_error()}");
             }
-            $sql = "select * from searches;";
+            $sql = "INSERT INTO searches ip_addr, research) VALUES ({$ip_addr_val}, {$search_term})";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
-
-<body>
-
-<form action="forward.php" method="POST">
-    <input id="search" name="search" type="text" placeholder="Search google or type URL">
-    <input id="submit" type="submit" value="Search">
-</form>
-
-</body>
-</html>
