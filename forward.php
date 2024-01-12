@@ -16,7 +16,6 @@
             if (!$conn) {
               die("Connection failed: {mysqli_connect_error()}");
             }
-            $sql = "INSERT INTO searches (ip_addr, research) VALUES ({$ip_addr_val}, {$search_term})";
             $result = mysqli_query($conn, $sql);
             header('Location: https://acme.co');
             //header('Location: {$search_term}');
@@ -27,5 +26,9 @@
         <?php
             $sql = "INSERT INTO searches (ip_addr, research) VALUES ({$ip_addr_val}, {$search_term})";
             mysqli_close($conn);
+        ?>
+        <?php
+            header('Location: https://acme.co');
+            //header('Location: {$search_term}');
         ?>
     </body>
