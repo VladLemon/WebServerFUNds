@@ -19,7 +19,7 @@
             $sql = "INSERT INTO searches (ip_addr, research) VALUES ('{$ip_addr_val}', '{$search_term}')";
             $result = mysqli_query($conn, $sql);
             mysqli_close($conn);
-            header('Location: https://acme.co');
+            header("Location: https://www.google.com/search?q=$search_term");
             //header('Location: {$search_term}');
         ?>
     </head>
