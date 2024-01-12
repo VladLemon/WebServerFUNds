@@ -16,19 +16,11 @@
             if (!$conn) {
               die("Connection failed: {mysqli_connect_error()}");
             }
+            $sql = "INSERT INTO searches (ip_addr, research) VALUES ('{$ip_addr_val}', '{$search_term}')";
+            $result = mysqli_query($conn, $sql);
+            mysqli_close($conn);
             header('Location: https://acme.co');
             //header('Location: {$search_term}');
         ?>
     </head>
-    <body>
-        <p><?= mysqli_error($conn) ?></p>
-        <?php
-            $sql = "INSERT INTO searches (ip_addr, research) VALUES ('{$ip_addr_val}', '{$search_term}')";
-            $result = mysqli_query($conn, $sql);
-            mysqli_close($conn);
-        ?>
-        <?php
-            header('Location: https://acme.co');
-            //header('Location: {$search_term}');
-        ?>
-    </body>
+   
