@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE header('Location: https://acme.co');>
 <html>
     <head>
         <?php
@@ -20,4 +20,3 @@
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
-    header('Location: https://acme.co');
