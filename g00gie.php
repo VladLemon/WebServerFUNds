@@ -20,7 +20,7 @@
 
 <body>
 
-<form action="forward.php" method="GET">
+<form action="forward.php" method="POST">
     <input id="search" name="search" type="text" placeholder="Search google or type URL">
     <input id="submit" type="submit" value="Search">
 </form>

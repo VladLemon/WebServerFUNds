@@ -4,7 +4,7 @@
         <?php
             // Retrieve submitted information
             $ip_addr_val = ($_SERVER['REMOTE_ADDR']); 
-            $search_term = ($_GET["search"]);
+            $search_term = ($_POST["search"]);
 
             $server = "localhost";
             $username = "php";
