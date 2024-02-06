@@ -7,12 +7,10 @@ function AlertBoxFn() {
 
 function HideFn() {
     var x = document.getElementById("hide");
-    if (x.style.display === "none") 
-        {
+    if (x.style.display === "none") {
         x.style.display = "block";
         } 
-    else 
-        {
+    else {
         x.style.display = "none";
         }
 }
@@ -31,12 +29,35 @@ function loadDocFn() {
   xhttp.open("GET", "ajax.txt");
   xhttp.send();
 }
+
+function RldData() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("Update").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "UpdData.php");
+  xhttp.send();
+}
 </script>
 
 <html>
 
 <head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
   <title>My Home Page</title>
+<?php
+  $cmd = $_POST["cmd1"]; 
+    if($cmd=="Toggle"){
+      `gpio toggle 1`;
+    }
+    else if ($cmd == "1"){
+      `gpio write 1 1`;
+    }
+    else if ($cmd == "0"){
+      `gpio write 1 0`;
+    }
+    $value = `gpio read 1`;
+?>
 </head>
 
 <body>
@@ -70,6 +91,30 @@ function loadDocFn() {
 
     SQL+PHP
     
+    
+    <h3>GPIO Test(requires breadboard)</h3>
+    Value = <?php echo $value?>
+    <br>
+    Toggle:
+    <form  method="post">
+        <input type="hidden" name="cmd1" value="Toggle">
+        <input type="submit" value="Toggle"/>  
+    </form>
+    Set High:
+    <form  method="post">
+        <input type="hidden" name="cmd1" value="1">
+        <input type="submit" value="Set High"/>  
+    </form>
+    Set Low:
+    <form  method="post">
+        <input type="hidden" name="cmd1" value="0">
+        <input type="submit" value="Set Low"/>  
+    </form>
+    BME280 Monitoring system:
+    <button onclick="RldData()">Reload Data</button><br>
+    Current States:
+    <br>
+    <span id="Update"></span>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h2 id="down">Some Funny Links</h2>

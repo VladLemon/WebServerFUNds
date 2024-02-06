@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
         <title>SQL test</title>
         <?php
             $server = "localhost";
@@ -32,7 +33,6 @@
                 {
                     echo "<option value='{$row['anime_top_number']}'> Top: {$row['anime_top_number']} | Name: {$row['anime_name']}</option>\n";
                 }
-                mysqli_close($conn);
             ?>
         </select>
         <br/>
