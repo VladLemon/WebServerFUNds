@@ -18,7 +18,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.creb.com%2FNews_Centre%2FCREBNow_Blog%2F2020%2FOctober%2Fhow_to_choose_the_right_home_security_system_for_your_needs_and_budget%2F&psig=AOvVaw3jicYIjhoAVVzjX2D_JBd-&ust=1707584795914000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKjVx5vfnoQDFQAAAAAdAAAAABAg');
+            background-image: url('https://www.creb.com/-/media/Public/CREBcom/News/CREBNow/2020/October/SocialHomeSecuritySystemGetty.jpg?h=1000&iar=0&w=1500&sc_lang=en');
             background-size: cover;
             background-position: center;
         }
