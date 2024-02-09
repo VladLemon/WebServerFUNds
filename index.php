@@ -34,7 +34,7 @@
             /* Center the navigation bar */
             padding-left: 0px;
             /* Adjust left padding as needed */
-            padding-bottom: 800px;
+            padding-bottom: 700px;
             
         }
 
