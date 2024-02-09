@@ -23,15 +23,16 @@
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             /* Adjust as needed */
-            align-items: center;
+            align-items: flex-start;
             width: 50%;
             /* Adjust the width of the navigation bar */
             margin: 0 auto;
             /* Center the navigation bar */
             padding-left: 0px;
             /* Adjust left padding as needed */
+            padding-top: 0px;
         }
 
         nav a {
@@ -80,7 +81,7 @@
         <a href="#">Door <span></span></a>
         <a href="#">About <span></span></a>
     </nav>
-    
+
 </body>
 
 </html>
