@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smart Home Monitoring System</title>
     <style>
         * {
             margin: 0;
@@ -20,6 +21,17 @@
             background: #000;
         }
 
+        nav {
+            display: flex;
+            justify-content: space-around;
+            /* Adjust as needed */
+            align-items: center;
+            width: 80%;
+            /* Adjust the width of the navigation bar */
+            margin: 0 auto;
+            /* Center the navigation bar */
+        }
+
         nav a {
             position: relative;
             font-size: 1.1em;
@@ -28,10 +40,8 @@
             text-decoration: none;
             padding: 6px 20px;
             transition: 0.5s;
-        }
-
-        nav a:hover {
-            color: #8ef;
+            margin: 0 10px;
+            /* Adjust the margin between buttons */
         }
 
         nav a span {
@@ -48,6 +58,10 @@
             transition: 0.5s;
         }
 
+        nav a:hover {
+            color: #8ef;
+        }
+
         nav a:hover span {
             transform: scale(1) translateY(0);
             opacity: 1;
@@ -59,14 +73,11 @@
 
 <body>
     <nav>
-        <a href="#">Home <span></span></a>
-        <a href="#">About<span></span></a>
-        <a href="#">Services <span></span></a>
-        <a href="#">Contact <span></span></a>
-        <a href="#">Help <span></span></a>
+        <a href="#">Light<span></span></a>
+        <a href="#">Temperature<span></span></a>
+        <a href="#">Door <span></span></a>
+        <a href="#">About <span></span></a>
     </nav>
 </body>
 
 </html>
-
-    
