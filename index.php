@@ -32,7 +32,8 @@
             /* Center the navigation bar */
             padding-left: 0px;
             /* Adjust left padding as needed */
-            padding-bottom: 500px;
+            padding-bottom: 900px;
+            
         }
 
         nav a {
