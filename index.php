@@ -32,7 +32,7 @@
             /* Center the navigation bar */
             padding-left: 0px;
             /* Adjust left padding as needed */
-            padding-top: 0px;
+            padding-top: 200px;
         }
 
         nav a {
