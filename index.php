@@ -42,7 +42,7 @@
             position: relative;
             font-size: 1.1em;
             font-weight: 500;
-            color: #303030;
+            color: #122939;
             text-decoration: none;
             padding: 6px 20px;
             transition: 0.5s;
