@@ -18,7 +18,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: url('https://www.creb.com/-/media/Public/CREBcom/News/CREBNow/2020/October/SocialHomeSecuritySystemGetty.jpg?h=1000&iar=0&w=1500&sc_lang=en');
+            background-image: url('https://protecsecuritysystems.com/wp-content/uploads/cache/2019/04/home-security-systems-icons-greenville-sc-/3896337847.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -42,7 +42,7 @@
             position: relative;
             font-size: 1.1em;
             font-weight: 500;
-            color: #333;
+            color: #303030;
             text-decoration: none;
             padding: 6px 20px;
             transition: 0.5s;
@@ -65,7 +65,7 @@
         }
 
         nav a:hover {
-            color: #8ef;
+            color: #e497f7;
         }
 
         nav a:hover span {
@@ -80,6 +80,7 @@
 <body>
     <nav>
         <a href="#">Light<span></span></a>
+
         <a href="#">Temperature<span></span></a>
         <a href="#">Door <span></span></a>
         <a href="#">About <span></span></a>
