@@ -23,13 +23,15 @@
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start;
             /* Adjust as needed */
             align-items: center;
-            width: 80%;
+            width: 50%;
             /* Adjust the width of the navigation bar */
             margin: 0 auto;
             /* Center the navigation bar */
+            padding-left: 20px;
+            /* Adjust left padding as needed */
         }
 
         nav a {
