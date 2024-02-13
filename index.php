@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Home Monitoring System</title>
-    <link rel="icon" type="SHMS.ico" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="SHMS.ico" />
     <style>
         * {
             margin: 0;
@@ -29,7 +29,7 @@
             justify-content: center;
             /* Adjust as needed */
             align-items: flex-start;
-            width: 40%;
+            width: 50%;
             /* Adjust the width of the navigation bar */
             margin: 0 auto;
             /* Center the navigation bar */
