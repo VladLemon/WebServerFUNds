@@ -66,12 +66,15 @@
 <body>
     <h4>
         <nav class="center">
-            <a href="#">Light<span></span></a>
-            <a href="#">Temperature<span></span></a>
+            <a href="light.php">Light<span></span></a>
+            <a href="temp.php">Temperature<span></span></a>
             <a href="#">Door <span></span></a>
-            <a href="#">About <span></span></a>
+            <a href="about.php">About <span></span></a>
         </nav>
     </h4>
+    <h3>
+        Hi, door
+    </h3>
 </body>
 
 </html>
