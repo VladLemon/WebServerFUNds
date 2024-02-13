@@ -64,15 +64,14 @@
 </head>
 
 <body>
-    <h5>
+    <h4>
         <nav class="center">
             <a href="#">Light<span></span></a>
             <a href="#">Temperature<span></span></a>
             <a href="#">Door <span></span></a>
             <a href="#">About <span></span></a>
         </nav>
-    </h5>
-
+    </h4>
 </body>
 
 </html>
