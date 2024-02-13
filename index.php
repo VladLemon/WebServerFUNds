@@ -29,7 +29,7 @@
             justify-content: center;
             /* Adjust as needed */
             align-items: flex-start;
-            width: 50%;
+            width: 40%;
             /* Adjust the width of the navigation bar */
             margin: 0 auto;
             /* Center the navigation bar */
