@@ -86,15 +86,17 @@
             page.style.display = "block";
         }
         function showTemp() {
+            hideall()
             var page = document.getElementById("hiddenTemp");
             page.style.display = "block";
         }
         function showDoor() {
+            hideall()
             var page = document.getElementById("hiddenDoor");
             page.style.display = "block";
         }
         function showAbout() {
-            
+            hideall()
             var page = document.getElementById("hiddenAbout");
             page.style.display = "block";
         }
