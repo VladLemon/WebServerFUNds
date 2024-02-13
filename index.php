@@ -7,39 +7,26 @@
     <title>Smart Home Monitoring System</title>
     <link rel="icon" type="image/x-icon" href="SHMS.ico" />
     <style>
-        body,html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
+            font-family: sans-serif;
         }
 
-        .bg-image {
-            /* The image used */
-            background-image: url("https://static.vecteezy.com/system/resources/previews/014/703/703/non_2x/smart-home-system-concept-phone-controls-works-safety-of-smart-devices-in-house-smartphone-app-of-monitoring-setting-of-algorithm-autonomous-works-of-household-appliances-internet-of-things-iot-vector.jpg");
-
-            /* Add the blur effect */
-            filter: blur(8px);
-            -webkit-filter: blur(8px);
-
-            /* Full height */
-            height: 100%;
-
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
+        body { 
+            color: #294586;
+            min-height: 100vh;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/014/703/703/non_2x/smart-home-system-concept-phone-controls-works-safety-of-smart-devices-in-house-smartphone-app-of-monitoring-setting-of-algorithm-autonomous-works-of-household-appliances-internet-of-things-iot-vector.jpg');
             background-size: cover;
+            background-position: center;
         }
-
-        nav.center {
+        
+        nav.center{
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: flex-start; 
         }
-
         nav a {
             position: relative;
             font-size: 1.1em;
@@ -47,7 +34,7 @@
             color: #294586;
             text-decoration: none;
             padding: 6px 20px;
-            transition: 0.5s;
+            transition: 0.5s;   
         }
 
         nav a span {
@@ -76,6 +63,7 @@
         .hidden {
             display: none;
         }
+
     </style>
     <link rel="stylesheet" href="/css/pure/pure-min.css">
     <link rel="stylesheet" href="/layouts/side-menu/styles.css">
@@ -86,12 +74,12 @@
             var tempS = document.getElementById("hiddenTemp");
             var doorS = document.getElementById("hiddenDoor");
             var aboutS = document.getElementById("hiddenAbout");
-
+            
             lightS.style.display = "none";
             tempS.style.display = "none";
             doorS.style.display = "none";
             aboutS.style.display = "none";
-
+           
         }
         function showLight() {
             hideAll()
@@ -118,8 +106,6 @@
 </head>
 
 <body>
-    <div class="bg-image"></div>
-
     <h4>
         <nav class="center">
             <a onclick="showLight()">Light<span></span></a>
