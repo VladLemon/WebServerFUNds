@@ -15,15 +15,16 @@
         }
 
         body { 
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; 
             min-height: 100vh;
             background-image: url('https://static.vecteezy.com/system/resources/previews/014/703/703/non_2x/smart-home-system-concept-phone-controls-works-safety-of-smart-devices-in-house-smartphone-app-of-monitoring-setting-of-algorithm-autonomous-works-of-household-appliances-internet-of-things-iot-vector.jpg');
             background-size: cover;
             background-position: center;
         }
-
+        nav.center{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+        }
         nav a {
             position: relative;
             font-size: 1.1em;
@@ -63,8 +64,8 @@
 </head>
 
 <body>
-    <h5 class="center">
-        <nav>
+    <h5>
+        <nav class="center">
             <a href="#">Light<span></span></a>
             <a href="#">Temperature<span></span></a>
             <a href="#">Door <span></span></a>
