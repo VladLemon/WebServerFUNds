@@ -15,6 +15,7 @@
         }
 
         body { 
+            color: #294586;
             min-height: 100vh;
             background-image: url('https://static.vecteezy.com/system/resources/previews/014/703/703/non_2x/smart-home-system-concept-phone-controls-works-safety-of-smart-devices-in-house-smartphone-app-of-monitoring-setting-of-algorithm-autonomous-works-of-household-appliances-internet-of-things-iot-vector.jpg');
             background-size: cover;
@@ -57,19 +58,44 @@
             transform: scale(1) translateY(0);
             opacity: 1;
         }
-        
+
+        .hidden {
+            display: none;
+        }
+
     </style>
     <link rel="stylesheet" href="/css/pure/pure-min.css">
     <link rel="stylesheet" href="/layouts/side-menu/styles.css">
 
-    <style>
-        .hidden {
-            display: none;
-        }
-    </style>
     <script>
-        function showPage() {
-            var page = document.getElementById("hiddenPage");
+        function hideAll() {
+            var lightS = document.getElementById("hiddenLight");
+            var tempS = document.getElementById("hiddenTemp");
+            var doorS = document.getElementById("hiddenDoor");
+            var aboutS = document.getElementById("hiddenAbout");
+            
+            lightS.style.display = "none";
+            tempS.style.display = "none";
+            doorS.style.display = "none";
+            aboutS.style.display = "none";
+           
+        }
+        function showLight() {
+            hideall()
+            var page = document.getElementById("hiddenLight");
+            page.style.display = "block";
+        }
+        function showTemp() {
+            var page = document.getElementById("hiddenTemp");
+            page.style.display = "block";
+        }
+        function showDoor() {
+            var page = document.getElementById("hiddenDoor");
+            page.style.display = "block";
+        }
+        function showAbout() {
+            
+            var page = document.getElementById("hiddenAbout");
             page.style.display = "block";
         }
     </script>
@@ -79,16 +105,27 @@
 <body>
     <h4>
         <nav class="center">
-            <a onclick="showPage()">Light<span></span></a>
-            <a href="temp.php">Temperature<span></span></a>
-            <a href="door.php">Door <span></span></a>
-            <a href="#">About <span></span></a>
+            <a onclick="showLight()">Light<span></span></a>
+            <a onclick="showTemp()">Temperature<span></span></a>
+            <a onclick="showDoor()">Door <span></span></a>
+            <a onclick="showAbout()">About <span></span></a>
         </nav>
     </h4>
-     <div id="hiddenPage" class="hidden">
-        <h1>Welcome to the Hidden Page!</h1>
-        <img id="img" src="https://www.thefactsite.com/wp-content/uploads/2017/10/monday-facts.webp">
-        <p>This is the content of the hidden page.</p>
+
+    <div id="hiddenLight" class="hidden">
+        Light module
+    </div>
+
+    <div id="hiddenTemp" class="hidden">
+        temp module
+    </div>
+
+    <div id="hiddenDoor" class="hidden">
+        door module
+    </div>
+
+    <div id="hiddenAbout" class="hidden">
+        about module
     </div>
 </body>
 
