@@ -18,25 +18,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
             background-image: url('https://static.vecteezy.com/system/resources/previews/014/703/703/non_2x/smart-home-system-concept-phone-controls-works-safety-of-smart-devices-in-house-smartphone-app-of-monitoring-setting-of-algorithm-autonomous-works-of-household-appliances-internet-of-things-iot-vector.jpg');
             background-size: cover;
             background-position: center;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: center;
-            /* Adjust as needed */
-            align-items: flex-start;
-            width: 50%;
-            /* Adjust the width of the navigation bar */
-            margin: 0 auto;
-            /* Center the navigation bar */
-            padding-left: 0px;
-            /* Adjust left padding as needed */
-            padding-bottom: 700px;
-            
         }
 
         nav a {
@@ -46,9 +30,7 @@
             color: #294586;
             text-decoration: none;
             padding: 6px 20px;
-            transition: 0.5s;
-            margin: 0 10px;
-            /* Adjust the margin between buttons */
+            transition: 0.5s;   
         }
 
         nav a span {
@@ -73,18 +55,21 @@
             transform: scale(1) translateY(0);
             opacity: 1;
         }
+        
     </style>
     <link rel="stylesheet" href="/css/pure/pure-min.css">
     <link rel="stylesheet" href="/layouts/side-menu/styles.css">
 </head>
 
 <body>
-    <nav>
-        <a href="#">Light<span>On</span></a>
-        <a href="#">Temperature<span></span></a>
-        <a href="#">Door <span></span></a>
-        <a href="#">About <span></span></a>
-    </nav>
+    <h1>
+        <nav>
+            <a href="#">Light<span></span></a>
+            <a href="#">Temperature<span></span></a>
+            <a href="#">Door <span></span></a>
+            <a href="#">About <span></span></a>
+        </nav>
+    </h1>
 
 </body>
 
