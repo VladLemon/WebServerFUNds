@@ -81,22 +81,22 @@
            
         }
         function showLight() {
-            hideall()
+            hideAll()
             var page = document.getElementById("hiddenLight");
             page.style.display = "block";
         }
         function showTemp() {
-            hideall()
+            hideAll()
             var page = document.getElementById("hiddenTemp");
             page.style.display = "block";
         }
         function showDoor() {
-            hideall()
+            hideAll()
             var page = document.getElementById("hiddenDoor");
             page.style.display = "block";
         }
         function showAbout() {
-            hideall()
+            hideAll()
             var page = document.getElementById("hiddenAbout");
             page.style.display = "block";
         }
