@@ -16,8 +16,8 @@
 
         body {
             display: flex;
-            /*justify-content: center;
-            align-items: center; */
+            justify-content: center;
+            align-items: flex-start; 
             min-height: 100vh;
             background-image: url('https://static.vecteezy.com/system/resources/previews/014/703/703/non_2x/smart-home-system-concept-phone-controls-works-safety-of-smart-devices-in-house-smartphone-app-of-monitoring-setting-of-algorithm-autonomous-works-of-household-appliances-internet-of-things-iot-vector.jpg');
             background-size: cover;
@@ -63,7 +63,7 @@
 </head>
 
 <body>
-    <h3 style = "position:relative; left:80px; top:2px;">
+    <h3>
         <nav>
             <a href="#">Light<span></span></a>
             <a href="#">Temperature<span></span></a>
