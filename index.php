@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Home Monitoring System</title>
+    <link rel="icon" type="SHMS.ico" href="favicon.ico" />
     <style>
         * {
             margin: 0;
@@ -80,7 +81,6 @@
 <body>
     <nav>
         <a href="#">Light<span></span></a>
-
         <a href="#">Temperature<span></span></a>
         <a href="#">Door <span></span></a>
         <a href="#">About <span></span></a>
