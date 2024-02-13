@@ -63,7 +63,7 @@
 </head>
 
 <body>
-    <h3>
+    <h3 style = "position:relative; left:80px; top:2px;">
         <nav>
             <a href="#">Light<span></span></a>
             <a href="#">Temperature<span></span></a>
