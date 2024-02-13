@@ -80,7 +80,7 @@
 
 <body>
     <nav>
-        <a href="#">Light<span></span></a>
+        <a href="#">Light<span>On</span></a>
         <a href="#">Temperature<span></span></a>
         <a href="#">Door <span></span></a>
         <a href="#">About <span></span></a>
