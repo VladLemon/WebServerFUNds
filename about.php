@@ -72,9 +72,7 @@
             <a href="#">About <span></span></a>
         </nav>
     </h4>
-    <h3>
-        Hi, About
-    </h3>
+    <h3>Hi, About</h3>
 </body>
 
 </html>

@@ -72,9 +72,7 @@
             <a href="about.php">About <span></span></a>
         </nav>
     </h4>
-    <h3>
-        Hi, door
-    </h3>
+    <h3>Hi, door</h3>
 </body>
 
 </html>
